@@ -1,0 +1,199 @@
+⇒  java -version
+java version "1.8.0_66"
+Java(TM) SE Runtime Environment (build 1.8.0_66-b17)
+Java HotSpot(TM) 64-Bit Server VM (build 25.66-b17, mixed mode)
+⇒  ./gradlew run
+:compileJava
+Processing of /Users/jason/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.16/88efb1b8d3d993fe339e9e2b201c75eed57d4c65/log4j-1.2.16.pom failed:
+    'build.plugins.plugin[io.spring.gradle.dependencymanagement.org.apache.maven.plugins:maven-antrun-plugin].dependencies.dependency.scope' for junit:junit:jar must be one of [compile, runtime, system] but is 'test'. in log4j:log4j:1.2.16
+:compileJava UP-TO-DATE
+:processResources UP-TO-DATE
+:classes UP-TO-DATE
+:findMainClass
+:run
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.2.8.RELEASE)
+
+2016-01-28 13:21:02.621  INFO 10340 --- [           main] co.masslab.ShibaAuth0Application         : Starting ShibaAuth0Application on zetes.local with PID 10340 (/Users/jason/Code/shiba-auth0/build/classes/main started by jason in /Users/jason/Code/shiba-auth0)
+2016-01-28 13:21:02.654  INFO 10340 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@462d5aee: startup date [Thu Jan 28 13:21:02 EST 2016]; root of context hierarchy
+2016-01-28 13:21:02.932  INFO 10340 --- [           main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [auth0-security-context.xml]
+2016-01-28 13:21:03.057  INFO 10340 --- [           main] o.s.s.core.SpringSecurityCoreVersion     : You are running with Spring Security Core 3.2.4.RELEASE
+2016-01-28 13:21:03.057  INFO 10340 --- [           main] o.s.s.config.SecurityNamespaceHandler    : Spring Security 'config' module version is 3.2.4.RELEASE
+2016-01-28 13:21:03.090  INFO 10340 --- [           main] s.s.c.h.HttpSecurityBeanDefinitionParser : Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 200, <auth0Filter>, order = 201, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2000, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2200, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2300]
+2016-01-28 13:21:03.091  INFO 10340 --- [           main] erInvocationSecurityMetadataSourceParser : Creating access control expression attribute 'permitAll' for /**
+2016-01-28 13:21:03.098  INFO 10340 --- [           main] o.s.s.c.h.AuthenticationConfigBuilder    : No login page configured. The default internal one will be used. Use the 'login-page' attribute to set the URL of the login page.
+2016-01-28 13:21:03.099  INFO 10340 --- [           main] s.s.c.h.HttpSecurityBeanDefinitionParser : Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 200, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 700, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 1100, Root bean: class [org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1300, Root bean: class [org.springframework.security.web.authentication.www.BasicAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1500, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=nul                                                         l; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2000, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2200, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#1>, order = 2300]
+2016-01-28 13:21:03.165  INFO 10340 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2016-01-28 13:21:03.620  INFO 10340 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2016-01-28 13:21:03.778  INFO 10340 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-01-28 13:21:03.779  INFO 10340 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.30
+2016-01-28 13:21:03.849  INFO 10340 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-01-28 13:21:03.849  INFO 10340 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1197 ms
+2016-01-28 13:21:04.081  INFO 10340 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**'], [org.springframework.security.web.context.SecurityContextPersistenceFilter@11e174ec, com.auth0.spring.security.auth0.Auth0AuthenticationFilter@17a893d0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@26b7a4d9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@25de28f5, org.springframework.security.web.access.ExceptionTranslationFilter@3f027eb6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6c674c95]
+2016-01-28 13:21:04.164  INFO 10340 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.SecurityContextPersistenceFilter@e1125f, org.springframework.security.web.authentication.logout.LogoutFilter@7b742c2b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4bfbfa03, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@462529b9, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4edeb8c8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1491c04c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e1b3f, org.springframework.security.web.access.ExceptionTranslationFilter@6f299262, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@540a7fb7]
+2016-01-28 13:21:04.429 ERROR 10340 --- [cat-startStop-1] org.apache.catalina.core.ContainerBase   : A child container failed during start
+
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost].StandardContext[]]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:871)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost].StandardContext[]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	... 6 common frames omitted
+Caused by: java.lang.NoSuchMethodError: javax.servlet.ServletContext.addFilter(Ljava/lang/String;Ljavax/servlet/Filter;)Ljavax/servlet/FilterRegistration$Dynamic;
+	at org.springframework.boot.context.embedded.FilterRegistrationBean.onStartup(FilterRegistrationBean.java:258)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.selfInitialize(EmbeddedWebApplicationContext.java:224)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.access$000(EmbeddedWebApplicationContext.java:85)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext$1.onStartup(EmbeddedWebApplicationContext.java:208)
+	at org.springframework.ntext.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:55)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5244)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 6 common frames omitted
+
+2016-01-28 13:21:04.430 ERROR 10340 --- [           main] org.apache.catalina.core.ContainerBase   : A child container failed during start
+
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost]]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:441)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:769)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:344)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize(TomcatEmbeddedServletContainer.java:89)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.<init>(TomcatEmbeddedServletContainer.java:76)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getTomcatEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:384)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:156)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:159)
+    org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:474)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:690)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:970)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:959)
+	at co.masslab.ShibaAuth0Application.main(ShibaAuth0Application.java:15)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:924)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:871)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 6 common frames omitted
+
+2016-01-28 13:21:04.431  WARN 10340 --- [           main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.spring                                            framework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+2016-01-28 13:21:04.436  INFO 10340 --- [           main] .b.l.ClasspathLoggingApplicationListener : Application failed to start with classpath: [file:/Users/jason/Code/shiba-auth0/build/classes/main/, file:/Users/jason/Code/shiba-auth0/build/resources/main/, file:/Users/jason/.gradle/caches/modules-2/files-2.1/com.auth0/spring-security-auth0/0.2/3b7c91192d5e03c428265c86bdd98154e77817f/spring-security-auth0-0.2.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/javax.servlet/servlet-api/2.5/5959582d97d8b61f4d154ca9e495aafd16726e34/servlet-api-2.5.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.16/7999a63bfccbc7c247a9aea10d83d4272bd492c6/log4j-1.2.16.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/1.2.8.RELEASE/ff085cd2111323ac9b0fdb73d0e42f768bda0531/spring-boot-starter-web-1.2.8.RELEASE.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/com.auth0/java-jwt/0.3/c69110b068daf5ea238a8f75da0276a4a0e33e93/java-jwt-0.3.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/3.2.4.RELEASE/493bc57396a821e8ffa7d99fac77cc79c15e9b7f/spring-security-core-3.2.4.RELEASE.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/3.2.4.RELEASE/197d803ab63dd3523d9df186505fc1cc93044334/spring-security-web-3.2.4.RELEASE.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/3.2.4.RELEASE/952da051fc959b215c8e5882a7ab1ca5137af036/spring-security-config-3.2.4.RELEASE.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/org.springframework/spring-oxm/3.2.8.RELEASE/649f1d492c2aa9a78dd56d4f3d7fb6017f2321a4/spring-oxm-3.2.8.RELEASE.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context-support/3.2.8.RELEASE/e7b60974aa42f8ad89834014a00e03c009acd5ce/spring-context-support-3.2.8.RELEASE.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/org.sp                                                         ringframework.boot/spring-boot-starter/1.2.8.RELEASE/28a60e42cfa973131387a21e2b3ccfffdd09783d/spring-boot-starter-1.2.8.RELEASE.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/1.2.8.RELEASE/966fe2ffc3564bbf9157cac031fef533266958bc/spring-boot-starter-tomcat-1.2.8.RELEASE.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.4.6/3e63a25de4065697b185f523ed5e020c0db3ff0/jackson-databind-2.4.6.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-validator/5.1.3.Final/334d46a93cf095160ce06d8382594b904933c808/hibernate-validator-5.1.3.Final.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.1.9.RELEASE/85a6d6031c4193d873144496e865b649a874cc47/spring-core-4.1.9.RELEASE.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.4/4216af16d38465bbab0f3dff8efa14204f7a399a/commons-codec-1.4.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.2.8.RELEASE/830424026af69ad8161db2ee95dc61beaf0ce189/spring-boot-1.2.8.RELEASE.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/1.2.8.RELEASE/cbb2a922ed5a3d11436548267b7ab162553c686/spring-boot-autoconfigure-1.2.8.RELEASE.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/1.2.8.RELEASE/554e1d7bb0a06b5149a21069db9695ccdabc0fdd/spring-boot-starter-logging-1.2.8.RELEASE.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.14/c2df91929ed06a25001939929bff5120e0ea3fd4/snakeyaml-1.14.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.0.30/87b12667b258d0135f7cf4234030a5ccbb55193f/tomcat-embed-core-8.0.30.jar, f                                                          Exception in thread "main"                                                                                           ile:/Users/jason/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/8.0.30/b97d5ff750126d7fdaf412aeec219306bd157e50/tomcat-embed-el-8.0.30.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-logging-juli/8.0.30/c19b5c37e1f67bf58f9726b438d5323411cd43c6/tomcat-embed-logging-juli-8.0.30.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/8.0.30/84cf6feff7ed4f73689b4fa076cc6ec33851e075/tomcat-embed-websocket-8.0.30.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.1.0.Final/8613ae82954779d518631e05daa73a6a954817d5/validation-api-1.1.0.Final.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.1.3.GA/64499e907f19e5e1b3fdc02f81440c1832fe3545/jboss-logging-3.1.3.GA.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.0.0/434efef28c81162b17c540e634cffa3bd9b09b4c/classmate-1.0.0.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.13/d78d2242e14e4182625152d225f76ae52b43491d/jcl-over-slf4j-1.7.13.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.13/43759e986de5fec7045e35e9533e5ad2f6cd1b05/jul-to-slf4j-1.7.13.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/org.slf4j/log4j-over-slf4j/1.7.13/b5f4685073a6ffba6bf7e1d51e2b5fb83bdfa953/log4j-over-slf4j-1.7.13.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.1.3/d90276fff414f06cb375f2057f6778cd63c6082f/logback-classic-1.1.3.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.13/7fcf30c25b8f4a9379b9dad0d3f487b25272c026/slf4j-api-1.7.13.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.1.3/e3c02049f2dbbc764681b40094ecf0dcbc99b157/logback-core-1.1.3.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.1.9.RELEASE/3016ea9912a6fa37a8b1                                                          81887019c1c9fac06e9c/spring-web-4.1.9.RELEASE.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.1.9.RELEASE/c065cad2a8f2c6efa0cc14e17d0d4e71c5270e75/spring-webmvc-4.1.9.RELEASE.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.4.0/d6a66c7a5f01cf500377bd669507a08cfeba882a/jackson-annotations-2.4.0.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.4.6/2a1f6edb86b8c6d29f37f6a807295d4e5c279707/jackson-core-2.4.6.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.1.9.RELEASE/dc298a04dacbab233c7eceee06b04f69d363404/spring-context-4.1.9.RELEASE.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.1.9.RELEASE/dd9f5c36a7f6482e43e6fd3cd625fd61d5308a17/spring-aop-4.1.9.RELEASE.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.1.9.RELEASE/ad15dfeb48d0127e424f1a3c0d15e4c81a5dc2b7/spring-beans-4.1.9.RELEASE.jar, file:/Users/jason/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.1.9.RELEASE/3f91ba075fe46a82b7d521f3eb547a480961f10c/spring-expression-4.1.9.RELEASE.jar]
+2016-01-28 13:21:04.437 ERROR 10340 --- [           main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:133)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:474)
+	at org.springframework.bootorg.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:133)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:474)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:690)
+t.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:690)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:970)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:959)
+	at co.masslab.ShibaAuth0Application.main(ShibaAuth0Application.java:15)
+Caused by: org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:970)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize(TomcatEmbeddedServletContainer.java:99)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:959)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.<init>(TomcatEmbeddedServletContainer.java:76)
+	at co.masslab.ShibaAuth0Application.main(ShibaAuth0Application.java:15)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getTomcatEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:384)
+Caused by: org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:156)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize(TomcatEmbeddedServletContainer.java:99)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:159)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.<init>(TomcatEmbeddedServletContainer.java:76)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:130)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getTomcatEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:384)
+	... 7 more
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:156)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardServer[-1]]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:159)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:130)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:344)
+	... 7 common frames omitted
+	at org.springframework.boot.context.embeCaused by: org.apache.catalina.LifecycleException: Failed to start component [StandardServer[-1]]
+mcat.TomcatEmbeddedServletContainer.initialize(TomcatEmbeddedServletContainer.java:89)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	... 12 more
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:344)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardService[Tomcat]]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize(TomcatEmbeddedServletContainer.java:89)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	... 12 common frames omitted
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:769)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardService[Tomcat]]
+	... 14 more
+	at org.apache.catalina.util.LCaused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat]]
+eBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:769)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:441)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 14 common frames omitted
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat]]
+	... 16 more
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:441)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:924)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	... 16 common frames omitted
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 18 more
+Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:924)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 18 common frames omitted
+
+:run FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':run'.
+> Process 'command '/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/bin/java'' finished with non-zero exit value 1
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 6.695 secs
