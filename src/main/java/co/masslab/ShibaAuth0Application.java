@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.*;
 
 @Configuration
-@ComponentScan("com.auth0")
+@ComponentScan(basePackages={"co.masslab", "com.auth0"})
 @ImportResource("classpath:auth0-security-context.xml")
 @PropertySource("classpath:auth0.properties")
 @SpringBootApplication
